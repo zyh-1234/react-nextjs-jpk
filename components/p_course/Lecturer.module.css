@@ -1,0 +1,52 @@
+.wrap {
+  position: relative;
+  border-bottom: 0.2rem solid #f8f8f8;
+}
+
+.title {
+  padding: 0.32rem 0.36rem;
+  font-weight: 500;
+  font-size: 0.4rem;
+  color: #36404a;
+}
+
+.title span {
+  vertical-align: middle;
+}
+
+.des {
+  margin-top: 0.06rem;
+  padding: 0.38rem 0.36rem 0;
+  position: relative;
+}
+
+.avatar {
+  position: absolute;
+  left: 0.36rem;
+  top: 0.44rem;
+  width: 0.72rem;
+  height: 0.72rem;
+}
+
+.avatar img {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.teacherInfo {
+  padding-bottom: 0.46rem;
+  line-height: 0.48rem;
+  margin-left: 1.04rem;
+  padding-bottom: 0.36rem;
+  font-size: 0.3rem;
+  color: #36404a;
+}
+
+.teacherInfo .name {
+  font-size: 0.34rem;
+  font-weight: 700;
+  color: #ff4c38;
+  margin-bottom: 0.14rem;
+}

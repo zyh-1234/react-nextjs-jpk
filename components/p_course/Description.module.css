@@ -1,0 +1,14 @@
+.wrap {
+  position: relative;
+  border-bottom: 0.2rem solid #f8f8f8;
+}
+
+.courseDes {
+  position: relative;
+  border-bottom: 0.2rem solid #f8f8f8;
+}
+
+.courseDes img {
+  vertical-align: middle;
+  max-width: 100% !important;
+}

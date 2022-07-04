@@ -1,0 +1,69 @@
+.wrap {
+  position: relative;
+  font-size: 0.26rem;
+  overflow: hidden;
+  border-bottom: 0.2rem solid #f8f8f8;
+}
+
+.titleImg {
+  position: relative;
+  padding-bottom: 61%;
+}
+
+.titleImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.courseInfo {
+  margin: 0 0.36rem;
+  padding: 0.2rem 0 0.42rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 0.52rem;
+  color: #36404a;
+  margin-bottom: 0.31rem;
+}
+
+.time {
+  position: relative;
+}
+
+.time span {
+  position: absolute;
+  left: 0;
+  top: 0.02rem;
+  color: #afb3b7;
+  padding-right: 0.3rem;
+}
+
+.time .courseTime {
+  margin-left: 0.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.teacher {
+  margin-top: 0.24rem;
+  position: relative;
+}
+
+.teacher span {
+  position: absolute;
+  left: 0;
+  top: 0.02rem;
+  color: #afb3b7;
+  padding-right: 0.3rem;
+}
+
+.teacher .teacherName {
+  margin-left: 0.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

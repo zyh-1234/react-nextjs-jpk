@@ -1,0 +1,82 @@
+.wrap {
+  position: relative;
+  border-bottom: 0.2rem solid #f8f8f8;
+}
+
+.title {
+  padding: 0.32rem 0.36rem;
+  font-weight: 500;
+  font-size: 0.4rem;
+  color: #36404a;
+}
+
+.title span {
+  vertical-align: middle;
+}
+
+.text {
+  display: block;
+  padding: 0.42rem 0 0.46rem;
+  margin: 0 0.36rem;
+  color: #36404a;
+  position: relative;
+  font-weight: 700;
+}
+
+.text img {
+  position: absolute;
+  right: 0.12rem;
+  top: 0.5rem;
+  width: 0.34rem;
+  height: 0.34rem;
+}
+
+.titleWrap {
+  display: inline-block;
+  vertical-align: middle;
+  width: 5.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.34rem;
+}
+
+.titleWrap span {
+  margin-left: 0.2rem;
+}
+
+.itemWrap {
+  position: relative;
+  padding: 6.4px 0;
+  padding: 0.4rem 0;
+  margin: 0 0.36rem;
+}
+
+.icon img {
+  width: 0.48rem;
+  margin: 0.04rem 0.24rem 0 0;
+  float: left;
+}
+
+.sub {
+  vertical-align: middle;
+  font-size: 0.26rem;
+  display: inline-block;
+  margin: 0;
+}
+
+.sub .p1 {
+  color: #31404c;
+  font-weight: 700;
+  line-height: 0.48rem;
+}
+
+.sub .p2 {
+  font-size: 0.26rem;
+  color: #828b94;
+  overflow: hidden;
+  margin-top: 0.08rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 4.5rem;
+}
