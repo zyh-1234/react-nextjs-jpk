@@ -1,6 +1,5 @@
-// 首页推荐课程
 export default (req, res) => {
-  const { start = 0, offset = 10 } = req.query
+  const { id } = req.query
   const mockData = [
     // 课程信息
     {
@@ -22,8 +21,6 @@ export default (req, res) => {
           img: '/img/teacher2.png',
           name: '张三2',
         },
-<<<<<<< HEAD
-=======
       ],
       // 分类
       categoryName: '素养',
@@ -40,6 +37,7 @@ export default (req, res) => {
       // 开课时间
       courseTime: '随报随学',
     },
+    // 课程信息
     {
       // 课时
       lessonNum: 101.5,
@@ -59,7 +57,6 @@ export default (req, res) => {
           img: '/img/teacher2.png',
           name: '张三2',
         },
->>>>>>> 6e48f71 (complate detail page)
         {
           img: '/img/teacher2.png',
           name: '张三3',
@@ -308,20 +305,87 @@ export default (req, res) => {
       courseTime: '2020-01-15 19:00:00',
     },
   ]
-  // start > 0模拟返回不足offset条数据
-  const resData =
-    Number(start) > 0
-      ? mockData.slice(0, offset - 2).map((item, idx) => {
-          const index = start * 10 + idx
-          item.courseTitle += index
-          item.id += index
-          return item
-        })
-      : mockData.slice(0, offset)
+  mockData.forEach((item) => {
+    // 课程说明
+    item.courseDes = [
+      '/img/detail1.png',
+      '/img/detail2.png',
+      '/img/detail3.png',
+      '/img/detail4.png',
+      '/img/detail5.png',
+    ]
+    // 评价
+
+    item.evaluate = {
+      isEvaluate: 1,
+      content: [
+        {
+          avatar: '/img/teacher2.png',
+          name: '李三',
+          createtime: '2022-01-16:20:38',
+          star: 0,
+          review: '很好的课程，有趣的灵魂',
+          tags: ['风趣幽默', '大招输出', '讲解透彻'],
+        },
+        {
+          avatar: '/img/teacher2.png',
+          name: '老六',
+          createtime: '2022-09-16:20:38',
+          star: 0,
+          review: '课程不错~有噶或',
+          tags: ['服务贴心'],
+        },
+      ],
+    }
+    // 课表
+    item.timetables = [
+      {
+        title: '请务必添加辅导老师微信，确保学生正常上课！',
+        type: 0,
+        sub: '提示',
+        icon: '/img/tip.png',
+      },
+      {
+        title: '读书的逻辑密码',
+        type: 1,
+        sub: '课程直播',
+        livetime: '2020-01-15 19:00:00',
+        liveId: 1100,
+        icon: '/img/live.png',
+      },
+      {
+        title: '文学创作的第二条路',
+        type: 1,
+        sub: '课程直播',
+        livetime: '2020-01-15 19:00:00',
+        liveId: 1122,
+        icon: '/img/live.png',
+      },
+      {
+        title: '人文素养的实际运用',
+        type: 1,
+        sub: '课程直播',
+        livetime: '2020-01-15 19:00:00',
+        liveId: 1123,
+        icon: '/img/live.png',
+      },
+    ]
+    // 老师信息
+    item.teacherInfo = {
+      titleImg: '/img/teacherImage.png',
+      avatar: '/img/teacher1.png',
+      teacherName: '张三',
+      teacherId: 123,
+      teacherDes:
+        '全国优秀教师，课题《互联网时代中学语文学习的方式方法》获全国创新教育科研成果一等奖，公开课《古诗词学习方法》获中国教育电视台电视评选一等奖。《新京报》专版专题报道教师。全国百万级金牌教师著有教辅类畅销书《文语方程式》。【法事情人】阅读法创始人，作家，诗人，著有诗集《第三门》，获得业内好评，在《青年文学》《锦绣》等杂志发表作品数篇。国家二级心理咨询师，中央财经大学商学院莲兮国艺学院首席心理咨询讲师 。对青少年心理有资深研究。',
+    }
+  })
+  const resData = mockData.find((item) => item.id == id)
+
   res.statusCode = 200
   res.json({
     code: '0',
-    msg: 'success',
-    data: resData,
+    message: 'success',
+    data: resData || {},
   })
 }

@@ -1,0 +1,8 @@
+.wrap {
+  display: flex;
+}
+
+.star {
+  background: no-repeat;
+  background-size: 100% 100%;
+}

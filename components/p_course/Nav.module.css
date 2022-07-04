@@ -1,0 +1,40 @@
+.wrap {
+  position: absolute;
+  width: 100%;
+  height: 1.44rem;
+  font-size: 0.3rem;
+  font-weight: 700;
+  color: #848a90;
+  background: #fff;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  z-index: 99;
+}
+
+.wrap span {
+  color: #848a90;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  height: 1.44rem;
+  padding-top: 0.44rem;
+  width: 25%;
+  text-align: center;
+}
+
+.wrap .current {
+  color: #36404a;
+}
+
+.wrap span p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0.96rem;
+  width: 0.2rem;
+  height: 0.06rem;
+  background: #fb4a3e;
+  /* visibility: hidden; */
+  border-radius: 0.02rem;
+}
