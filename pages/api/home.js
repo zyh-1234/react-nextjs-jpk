@@ -10,38 +10,22 @@ export default (req, res) => {
         {
           img: '/img/banner1.png',
           title: '5天用公式巧学英语',
-<<<<<<< HEAD
           courseId: 301,
-=======
-          courseId: 0,
->>>>>>> 6e48f71 (complate detail page)
         },
         {
           img: '/img/banner2.png',
           title: '3天带你摆脱“哑巴英语”',
-<<<<<<< HEAD
           courseId: 302,
-=======
-          courseId: 0,
->>>>>>> 6e48f71 (complate detail page)
         },
         {
           img: '/img/banner3.png',
           title: '雅思从迷茫到7分，备考规划三步走',
-<<<<<<< HEAD
           courseId: 303,
-=======
-          courseId: 1,
->>>>>>> 6e48f71 (complate detail page)
         },
         {
           img: '/img/banner4.png',
           title: '【延考必备】一节课带你吃透专八听力（不设回放）',
-<<<<<<< HEAD
           courseId: 304,
-=======
-          courseId: 1,
->>>>>>> 6e48f71 (complate detail page)
         },
       ],
       // 弹窗
