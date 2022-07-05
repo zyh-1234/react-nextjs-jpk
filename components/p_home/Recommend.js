@@ -37,10 +37,6 @@ export default function Recommend() {
     fetchRecommend()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-<<<<<<< HEAD
-
-=======
->>>>>>> 6e48f71 (complate detail page)
   return (
     <section>
       <SectionHeader title="课程精选" subTitle="Course selection" />

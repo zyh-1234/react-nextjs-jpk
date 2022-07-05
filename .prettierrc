@@ -1,17 +1,10 @@
 {
   "semi": false,
   "tabWidth": 2,
-<<<<<<< HEAD
-  "endOfLine": "lf",
-=======
   "endOfLine": "auto",
->>>>>>> 6e48f71 (complate detail page)
   "printWidth": 100,
   "singleQuote": true,
   "trailingComma": "all",
-  "jsxBracketSameLine": true
-<<<<<<< HEAD
+  "jsxBracketSameLine": true,
+  "parser": "flow"
 }
-=======
-}
->>>>>>> 6e48f71 (complate detail page)
