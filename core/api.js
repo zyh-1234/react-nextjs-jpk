@@ -25,9 +25,6 @@ export const getHome = () => request.get('/home')
 
 // 首页推荐
 export const getRecommend = (params) => request.get('/recommend', { params })
-<<<<<<< HEAD
-=======
 
 //  课程详情
 export const getCourseDetail = (id) => request.get(`/course/detail/${id}`)
->>>>>>> 6e48f71 (complate detail page)

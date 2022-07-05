@@ -22,8 +22,6 @@ export default (req, res) => {
           img: '/img/teacher2.png',
           name: '张三2',
         },
-<<<<<<< HEAD
-=======
       ],
       // 分类
       categoryName: '素养',
@@ -59,7 +57,6 @@ export default (req, res) => {
           img: '/img/teacher2.png',
           name: '张三2',
         },
->>>>>>> 6e48f71 (complate detail page)
         {
           img: '/img/teacher2.png',
           name: '张三3',
